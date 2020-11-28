@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Book Store</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row my-2">
+            <div class="col-md-8 offset-md-2 border">
+                <p class="display-4">Add Book</p>
+
+                <div id="notifyMe">
+
+                </div>
+
+                <form action="" id="book-form">
+
+                    <div class="form-group">
+                        <label for="title">Title</label>
+                        <input class="form-control" type="text" name="title" id="title" >
+
+                        <div class="invalid-feedback">
+                            Name is required
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="author">Author</label>
+                        <input class="form-control" type="text" name="author" id="author" >
+                        <div class="invalid-feedback">
+                            Author is required
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="isbn">ISBN</label>
+                        <input class="form-control" type="text" name="isbn" id="isbn" >
+                        <div class="invalid-feedback">
+                            ISBN is required
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-success btn-block mb-2">
+                        Add
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Author</th>
+                            <th>ISBN</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="book-list">
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bookStore.js"></script>
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
